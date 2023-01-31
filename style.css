@@ -21,10 +21,82 @@ body{
 
 .grid-container{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.8fr 0.22fr 1fr;
+    grid-template-rows: 0.6fr 0.5fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+}
+
+.left-bar{
+    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 4%;
+}
+
+.line{
+    position: absolute;
+    bottom: 0;
+    background-color: var(--blue-color);
+    width: 1.5px;
+    height: 150px;
+}
+
+.github-logo-left{
+    position: absolute;
+    bottom: 160px;
+}
+
+.codepen-logo{
+    position: absolute;
+    bottom: 210px;
+}
+
+.instagram-logo{
+    position: absolute;
+    bottom: 260px;
+}
+
+.discord-logo{
+    position: absolute;
+    bottom: 310px;
+}
+
+.icon{
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.icon:hover{
+    transform: scale(.8);
+}
+
+.right-bar{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 4%;
+}
+
+.line2{
+    position: absolute;
+    bottom: 0;
+    background-color: var(--blue-color);
+    width: 1.5px;
+    height: 150px;
+    right: 62%;
+}
+
+.email{
+    font-family: var(--secondary-font);
+    color: var(--blue-color);
+    position: absolute;
+    bottom: 230px;
+    right: -27px;
+    transform: rotate(-90deg);
+    cursor: pointer;
 }
 
 .light-mode{
@@ -94,8 +166,14 @@ span{
     color: var(--blue-color);
 }
 
+.wave{
+    width: 90%;
+    margin-bottom: -70px;
+}
+
 .about-container{
     margin-left: 100px;
+    width: 90%;
 }
 
 .about_header{
@@ -113,7 +191,7 @@ span{
 
 .about{
     background-color: var(--secondary-color);
-    width: 100%;
+    width: 90%;
     height: auto; /*135vh*/
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -179,16 +257,18 @@ span{
 /*Projects*/
 
 .projects-container{
-    width: 100%;
     height: auto;
     background-color: var(--primary-color);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    align-content: center;
-    width: 70%;
+    width: 95%;
+}
+
+.projects{
+    margin-left: 28px;
 }
 
 .project{
@@ -203,6 +283,7 @@ span{
     justify-content: center;
     align-items: center;
     margin-left: 60px;
+    flex: 1 0 21%;
 }
 
 .project>h1{
@@ -252,8 +333,7 @@ span{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    align-content: center;
-    width: 90%;
+    width: 95%;
 }
 
 .bis-project{
@@ -268,6 +348,7 @@ span{
     justify-content: center;
     align-items: center;
     margin-left: 60px;
+    flex: 1 0 21%;
 }
 
 .bis-project>h1{
@@ -289,4 +370,87 @@ span{
     margin: 0;
     text-decoration: none;
     color: var(--blue-color);
+}
+
+.mid-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -100px;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.bg-contact{
+    background-color: var(--header-color);
+    width: 90%;
+    height: 200px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-bottom: -400px;
+}
+
+.foreground-contact{
+    width: 80%;
+    background-color: var(--blue-color);
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: -80px;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foreground-contact>h2{
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    font-size: 35px;
+}
+
+.foreground-contact>p{
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+
+.button-contact{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary-color);
+    justify-content: space-around;
+    align-items: center;
+    width: 180px;
+    height: 70px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.button-contact:hover{
+    transform: scale(.9);
+}
+
+.button-contact>p{
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 1493px) {
+    .welcome_text{
+        width: 50%;
+    }
+
+    .skill{
+        display: none;
+    }
 }
