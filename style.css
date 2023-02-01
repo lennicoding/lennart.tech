@@ -148,12 +148,12 @@ header{
     margin-left: 40px;
 }
 
-.main-right>h1{
+.welcome_text{
     font-family: var(--secondary-font);
     float: right;
     color: var(--secondary-color);
     text-align: right;
-    font-size: 45px;
+    font-size: 42px;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -445,12 +445,14 @@ span{
     font-size: 18px;
 }
 
-@media only screen and (max-width: 1493px) {
-    .welcome_text{
-        width: 50%;
-    }
-
+@media only screen and (max-width: 1000px) {
     .skill{
         display: none;
+    }
+}
+
+@media only screen and (max-width: 1400px){
+    .welcome_text{
+        width: 50%;
     }
 }
