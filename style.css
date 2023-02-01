@@ -160,6 +160,7 @@ header{
     transform: translateY(-50%);
     right: 100px;
     max-width: 950px;
+    width: 40%;
 }
 
 span{
