@@ -434,6 +434,7 @@ span{
     margin-bottom: -100px;
 }
 
+/*
 .contact-container{
     display: flex;
     flex-direction: column;
@@ -499,6 +500,7 @@ span{
     color: var(--secondary-color);
     font-size: 18px;
 }
+*/
 
 @media only screen and (max-width: 1000px) {
     .skill{
